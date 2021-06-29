@@ -22,7 +22,7 @@ release-dry-run:
 		-v `pwd`:/go/src/$(PACKAGE_NAME) \
 		-v `pwd`/sysroot:/sysroot \
 		-w /go/src/$(PACKAGE_NAME) \
-		paramaw/golang-cross:${GOLANG_CROSS_VERSION} \
+		troian/golang-cross:${GOLANG_CROSS_VERSION} \
 		--rm-dist --skip-validate --skip-publish
 
 .PHONY: release
@@ -40,5 +40,5 @@ release:
 		-v `pwd`:/go/src/$(PACKAGE_NAME) \
 		-v `pwd`/sysroot:/sysroot \
 		-w /go/src/$(PACKAGE_NAME) \
-		paramaw/golang-cross:${GOLANG_CROSS_VERSION} \
+		troian/golang-cross:${GOLANG_CROSS_VERSION} \
 		release --rm-dist
