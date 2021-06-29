@@ -1,4 +1,4 @@
-module github.com/troian/golang-cross-example
+module github.com/paramaw/golang-cross-example
 
 go 1.15
 
